@@ -51,6 +51,16 @@ htpasswd -Bbn rohan rohan123 > ./registry/registry.password
 docker login rohanregistry.com
 ```
 
+### Handson demo
+
+```bash
+docker build -t rohanregistry.com/demoimage/hello-world:v0 .
+docker images
+docker run -it rohanregistry.com/demoimage/hello-world:v0
+docker push rohanregistry.com/demoimage/hello-world:v0
+```
+
+
 ### Location where all the docker images data will be stored
 
 ```bash
