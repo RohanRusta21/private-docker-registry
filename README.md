@@ -19,6 +19,12 @@ environment used in registry image:
         Sets the root directory for storing registry data. This is where the Docker images and other data will be stored within the container.
 
 ```bash
+mkdir -p ./nginx/certs
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./nginx/certs/privkey.pem -out ./nginx/certs/fullchain.pem -subj "/CN=rohanregistry.com"
+```
+
+
+```bash
 mkdir -p ./registry/data
 ```
 
