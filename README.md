@@ -45,6 +45,12 @@ sudo apt install apache2-utils
 htpasswd -Bbn rohan rohan123 > ./registry/registry.password
 ```
 
+### login to your registry
+
+```bash
+docker login rohanregistry.com
+```
+
 ### Location where all the docker images data will be stored
 
 ```bash
