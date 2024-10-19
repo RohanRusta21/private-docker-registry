@@ -1,6 +1,13 @@
 # private-docker-registry
 
+```bash
+sudo snap install docker
+```
 
+```bash
+docker --version
+docker-compose --version
+```
 
 environment used in registry image:
 
