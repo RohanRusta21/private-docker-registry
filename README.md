@@ -18,3 +18,7 @@ environment used in registry image:
     REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data:
         Sets the root directory for storing registry data. This is where the Docker images and other data will be stored within the container.
 
+
+### Location where all the docker images data will be stored
+
+ls -la ./registry/data/docker/registry/v2/repositories/
