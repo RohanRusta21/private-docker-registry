@@ -18,6 +18,19 @@ environment used in registry image:
     REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data:
         Sets the root directory for storing registry data. This is where the Docker images and other data will be stored within the container.
 
+```bash
+mkdir -p ./registry/data
+```
+
+```bash
+# install htpasswd
+sudo apt install apache2-utils
+```
+
+```bash
+# create a password file. username: rohan, password: rohan123
+htpasswd -Bbn rohan rohan123 > ./registry/registry.password
+```
 
 ### Location where all the docker images data will be stored
 
