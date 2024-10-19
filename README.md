@@ -21,4 +21,6 @@ environment used in registry image:
 
 ### Location where all the docker images data will be stored
 
+```bash
 ls -la ./registry/data/docker/registry/v2/repositories/
+```
